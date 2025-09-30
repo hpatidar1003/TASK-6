@@ -1,24 +1,33 @@
 Password Strength Evaluation Summary
 
-This document summarizes the results of password strength assessments using The Password Meter tool. Each password was evaluated based on complexity, character composition, and vulnerability patterns. The tool provides a score (0–100%) and a qualitative rating.
+This document summarizes the results of password strength assessments using The Password Meter tool. Each password was analyzed based on its length, character diversity, and susceptibility to common patterns. The tool assigns a score (0–100%) and a qualitative rating based on additions and deductions.
 
 Evaluated Passwords
 
-Password              | Score | Complexity   | Notes
-----------------------|-------|--------------|-------------------------------------------------------------
-password              | 8%    | Very Weak    | Fails minimum requirements; lacks diversity in character types
-Password              | 29%   | Weak         | Slight improvement due to uppercase; still lacks numbers/symbols
-E@rs1t100             | 90%   | Very Strong  | Meets all criteria; includes mixed case, numbers, and symbols
-Password123!          | 93%   | Very Strong  | Balanced composition; minor deductions for sequential characters
-M@xSecur3P@ssw0rd!    | 100%  | Very Strong  | Optimal structure; exceeds all minimum standards with minimal flaws
+Password               | Score | Complexity   | Notes
+------------------------|-------|--------------|-------------------------------------------------------------
+password                | 8%    | Very Weak    | All lowercase; lacks numbers and symbols; fails minimum criteria
+Password                | 29%   | Weak         | Adds uppercase; still missing numbers and symbols
+Password@123            | 93%   | Very Strong  | Includes uppercase, lowercase, numbers, and symbols; balanced
+Mfaisin@20252026        | 100%  | Very Strong  | Long, diverse, and well-structured; exceeds all minimum standards
 
 Evaluation Criteria
 
-Additions: Points awarded for character count, diversity (uppercase, lowercase, numbers, symbols), and placement  
-Deductions: Penalties for repetition, consecutive characters, and sequential patterns  
+Additions:
+- Number of characters
+- Use of uppercase, lowercase, numbers, and symbols
+- Placement of numbers or symbols in the middle
+- Meeting minimum requirements (length and character diversity)
+
+Deductions:
+- Use of only letters or only numbers
+- Repeated characters
+- Consecutive or sequential characters (e.g., abc, 123)
+- Lack of character type variation
+
 Minimum Requirements:
-- At least 8 characters
-- Contains 3 of 4: uppercase, lowercase, numbers, symbols
+- At least 8 characters in length
+- Contains at least 3 of the following: uppercase letters, lowercase letters, numbers, symbols
 
 Legend
 
@@ -28,4 +37,4 @@ Weak / Very Weak: Fails to meet minimum standards; significant vulnerabilities
 
 Usage
 
-This documentation serves as a reference for understanding password strength metrics and improving password hygiene in security-sensitive applications.
+This documentation serves as a reference for understanding password strength metrics and improving password hygiene in security-sensitive applications. It may be used to guide password policy enforcement, user education, or automated validation systems.
